@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.nav {
+    background-color: #004aad; /* Slightly darker blue for a professional look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 10vh; /* Fixed height for better alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.nav .right div {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav .right div:hover {
+    background-color: #ffffff;
+    color: #004aad; /* Match hover color with background */
+    border-radius: 5px; /* Slightly less rounded for a cleaner look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+}
+
+.nav .search {
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for input box */
+}
+
+.nav .search input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.nav .search button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav .search button:hover {
+    background-color: white;
+    color: #004aad;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
